@@ -476,7 +476,7 @@ class CombinedEvent(Generic[P, T]):
     ```
 
     NOTE: The names of the sub-methods **can't** start with `on_`;
-    instead they can start with `_on_` like in the the above example, or anything else.
+    instead they can start with `_on_` like in the above example, or anything else.
     """
 
     def __init__(self, *methods: Callable[Concatenate[Any, P], T]):
