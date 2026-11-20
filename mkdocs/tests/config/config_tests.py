@@ -27,7 +27,7 @@ class ConfigTests(unittest.TestCase):
         )
         self.assertEqual(warnings, [])
 
-    def test_nonexistant_config(self):
+    def test_nonexistent_config(self):
         with self.assertRaises(ConfigurationError):
             config.load_config(config_file='/path/that/is/not/real')
 

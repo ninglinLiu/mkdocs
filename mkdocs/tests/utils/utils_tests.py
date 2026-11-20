@@ -474,7 +474,7 @@ class ThemeUtilsTests(unittest.TestCase):
 
     def test_get_theme_dir_error(self):
         with self.assertRaises(KeyError):
-            utils.get_theme_dir('nonexistanttheme')
+            utils.get_theme_dir('nonexistenttheme')
 
     @mock.patch('mkdocs.utils.entry_points', autospec=True)
     def test_get_theme_dir_importerror(self, mock_iter):
